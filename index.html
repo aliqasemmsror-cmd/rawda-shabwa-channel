@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>بوابة قناة مدينة الروضة - شبوة الإعلامية</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Font Setup (Inter and Tajawal for magnificent Arabic typography) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Tajawal', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            brandGold: {
+              50: '#fffbeb',
+              100: '#fef3c7',
+              200: '#fde68a',
+              300: '#fcd34d',
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309',
+              800: '#92400e',
+              900: '#78350f',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    body {
+      font-family: 'Tajawal', sans-serif;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-neutral-100 pb-16 text-neutral-900 selection:bg-amber-100 selection:text-amber-900">
+
+  <!-- HEADER -->
+  <header class="relative w-full border-b border-amber-500/20 bg-gradient-to-b from-neutral-900 to-neutral-800 text-white shadow-md">
+    <!-- Top Micro Banner -->
+    <div class="mx-auto flex max-w-3xl items-center justify-between px-4 py-2 text-[10px] sm:text-xs text-neutral-400">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex h-2 w-2 animate-pulse rounded-full bg-emerald-500"></span>
+        <span>قناة مدينة الروضة - شبوة (رسمي)</span>
+      </div>
+      <div class="flex items-center gap-1.5">
+        <span>اليمن - شبوة</span>
+      </div>
+    </div>
+
+    <!-- Main Identity (Centered Logo) -->
+    <div class="mx-auto max-w-3xl px-4 py-8 text-center">
+      <div class="relative mb-5 flex items-center justify-center">
+        <!-- Golden radiating rings -->
+        <div class="absolute inset-0 -m-3 animate-pulse rounded-full border border-amber-500/10"></div>
+        <div class="absolute inset-0 -m-1.5 rounded-full border border-amber-500/25"></div>
+        
+        <div class="relative h-28 w-28 overflow-hidden rounded-full border-2 border-amber-500 bg-neutral-900 p-1 shadow-xl transition-all duration-300 hover:scale-105">
+          <img
+            src="logo.png"
+            alt="شعار قناة مدينة الروضة شبوة"
+            class="h-full w-full rounded-full object-cover"
+            onerror="this.style.display='none'; document.getElementById('logo-fallback').style.display='flex';"
+          />
+          <!-- Luxury Fallback Design in case logo.png doesn't load on local machine -->
+          <div id="logo-fallback" class="hidden h-full w-full flex-col items-center justify-center rounded-full bg-gradient-to-br from-amber-600 via-amber-700 to-neutral-900 text-center">
+            <span class="text-[10px] tracking-widest text-amber-200">مدينة</span>
+            <span class="text-xl font-black leading-none text-white">الروضة</span>
+            <span class="text-[8px] text-amber-300 uppercase mt-0.5">شبوة</span>
+          </div>
+        </div>
+
+        <!-- Live Status Badge -->
+        <div class="absolute -bottom-1 left-1/2 -translate-x-1/2 rounded-full border border-amber-500 bg-neutral-900 px-3 py-0.5 text-[9px] font-bold text-amber-400 shadow-md">
+          <span class="flex items-center gap-1">
+            <svg class="h-2.5 w-2.5 animate-pulse text-amber-500" fill="currentColor" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10"/>
+            </svg>
+            تغطية مستمرة
+          </span>
+        </div>
+      </div>
+
+      <!-- Channel Name -->
+      <h1 class="text-2xl font-black tracking-tight text-white sm:text-3xl">
+        قناة <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-300 to-amber-200">مدينة الروضة</span> الإعلامية
+      </h1>
+      <p class="mt-2 text-xs text-neutral-300 sm:text-sm">
+        البث والتقارير المرئية الرسمية من قلب مدينة الروضة بمحافظة شبوة
+      </p>
+    </div>
+    
+    <!-- Golden Gradient Strip -->
+    <div class="h-0.5 w-full bg-gradient-to-r from-transparent via-amber-500 to-transparent opacity-80"></div>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <main class="mx-auto max-w-3xl px-4 py-8 sm:px-6">
+
+    <!-- CONNECTION TIP BANNER -->
+    <div class="mb-6 rounded bg-amber-500/10 border border-amber-500/20 p-4 text-xs text-amber-800 flex items-start gap-3">
+      <!-- Info Icon SVG -->
+      <svg class="h-5 w-5 shrink-0 text-amber-600 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+      <div class="space-y-0.5">
+        <span class="font-bold">ميزة متوافقة مع سرعة الإنترنت باليمن:</span>
+        <p class="text-neutral-600 leading-relaxed md:inline md:mr-1">
+          تم تحسين مشغل الصفحة المدمج ليوفر تحميل البيانات الذكي. يرجى الضغط على زر "تشغيل الفيديو" لبدء الإرسال الفوري من فيسبوك.
+        </p>
+      </div>
+    </div>
+
+    <!-- MAIN SINGLE VIDEO BLOCK -->
+    <section class="overflow-hidden rounded-lg border border-neutral-200 bg-white shadow-md transition-all duration-300 hover:border-amber-500/30">
+      
+      <!-- Video Frame Header -->
+      <div class="bg-gradient-to-r from-neutral-900 to-neutral-800 px-4 py-3.5 text-white flex items-center justify-between border-b border-amber-500/20">
+        <div class="flex items-center gap-2">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
+          </span>
+          <h2 class="text-xs font-bold tracking-wider text-amber-400">الفيديو الرسمي المثبت للقناة</h2>
+        </div>
+        <div class="flex items-center gap-1 text-[11px] text-amber-300 font-bold">
+          <span>شاشة الإرسال الرئيسي</span>
+        </div>
+      </div>
+
+      <!-- Video Content Area -->
+      <div class="p-4 sm:p-6">
+        
+        <!-- Video Player Wrapper (Lazy Mode Enabled) -->
+        <div class="relative w-full overflow-hidden rounded-md border border-neutral-700/60 bg-neutral-950 shadow-inner aspect-video" id="video-wrapper">
+          
+          <!-- Lazy Placeholder -->
+          <div 
+            id="video-placeholder"
+            onclick="playVideo()"
+            class="absolute inset-0 flex flex-col justify-between p-4 cursor-pointer select-none bg-gradient-to-br from-amber-950 via-neutral-900 to-black transition-all duration-300 hover:opacity-95"
+          >
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(212,175,55,0.08),transparent_50%)]"></div>
+            <div class="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+
+            <!-- Top Row -->
+            <div class="relative z-10 flex items-center justify-between">
+              <span class="rounded bg-amber-500/90 px-2 py-0.5 text-[10px] font-bold text-neutral-950 shadow">
+                قناة الروضة ميديا
+              </span>
+              <span class="rounded bg-black/75 px-1.5 py-0.5 font-mono text-[11px] text-white backdrop-blur-sm">
+                10:15
+              </span>
+            </div>
+
+            <!-- Play Button Icon -->
+            <div class="relative z-10 flex flex-col items-center justify-center self-center my-auto transition-transform duration-300 hover:scale-105">
+              <div class="flex h-14 w-14 items-center justify-center rounded-full border border-amber-400 bg-amber-500/10 text-amber-400 shadow-[0_0_20px_rgba(212,175,55,0.25)] backdrop-blur-sm">
+                <!-- SVG Play Icon -->
+                <svg class="h-6 w-6 fill-current translate-x-[-1px] rtl:translate-x-[1px]" viewBox="0 0 24 24">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+              </div>
+              <span class="mt-2.5 text-xs font-bold text-amber-100 drop-shadow-md">إضغط لتشغيل الفيديو فوراً</span>
+            </div>
+
+            <!-- Bottom Title Row -->
+            <div class="relative z-10">
+              <p class="text-sm font-bold text-white drop-shadow-sm">
+                تغطية خاصة لفعاليات ونشاطات قناة الروضة شبوة
+              </p>
+              <div class="mt-1 flex items-center gap-1.5 text-[10px] text-neutral-400">
+                <!-- Calendar Icon SVG -->
+                <svg class="h-3 w-3 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                <span>2026-06-22</span>
+                <span class="text-neutral-600">•</span>
+                <span>بث فيسبوك رسمي كامل</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Target Iframe Slot (Populated upon user click) -->
+          <div id="video-iframe-container" class="hidden w-full h-full"></div>
+
+        </div>
+
+        <!-- Video Metadata Underneath -->
+        <div class="mt-4 space-y-3">
+          <div class="flex items-center gap-2">
+            <span class="rounded bg-amber-500/10 px-2 py-0.5 text-[10px] font-bold text-amber-700 border border-amber-500/20">
+              بث معتمد ومباشر
+            </span>
+            <span class="text-[11px] text-neutral-400 font-mono">2026-06-22</span>
+          </div>
+          
+          <h3 class="text-lg font-bold text-neutral-900 leading-snug sm:text-xl">
+            تغطية خاصة لفعاليات ونشاطات قناة الروضة شبوة
+          </h3>
+          
+          <p class="text-xs text-neutral-600 leading-relaxed pt-2 border-t border-neutral-100">
+            الفيديو الرسمي وبوابة البث لقناة مدينة الروضة - بمحافظة شبوة، يستعرض أهم الأخبار المحلية الجارية والفعاليات الثقافية والاجتماعية والرياضية بالمنطقة.
+          </p>
+
+          <!-- Interactive Share Actions -->
+          <div class="flex items-center justify-between pt-4 border-t border-neutral-100 mt-2">
+            <span class="text-[11px] text-neutral-400 font-medium">
+              شوهد 1840 مرة
+            </span>
+            
+            <button
+              onclick="copyVideoLink()"
+              className="group flex items-center gap-1.5 text-xs text-amber-600 hover:text-amber-700 font-bold transition-all cursor-pointer"
+            >
+              <span id="share-btn-text" class="text-xs font-bold text-amber-600 flex items-center gap-1">
+                <!-- Share Icon SVG -->
+                <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.684 10.742l4.028-2.014m0 0a3.5 3.5 0 10-4.028-2.014 3.5 3.5 0 004.028 2.014zm0 0l-4.028 2.014m0 0a3.5 3.5 0 104.028 2.014 3.5 3.5 0 00-4.028-2.014z" />
+                </svg>
+                مشاركة رابط الفيديو
+              </span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- OFFICIAL SOCIAL PLATFORMS -->
+    <section class="mt-8 rounded-lg border border-neutral-200 bg-white p-5 shadow-xs text-center space-y-4">
+      <div class="space-y-1">
+        <h4 class="text-sm font-bold text-neutral-900">انضم لقنواتنا الرسمية التفاعلية</h4>
+        <p class="text-neutral-500 text-[11px]">تابع آخر الأخبار والتحديثات الرسمية أولاً بأول</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+        <!-- Whatsapp Groups -->
+        <a
+          href="https://wa.me/#"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center justify-center gap-2 p-2.5 rounded border border-neutral-200 hover:border-emerald-500 bg-emerald-50/50 hover:bg-emerald-50 transition-all text-xs font-bold text-emerald-900"
+        >
+          <!-- Whatsapp Icon -->
+          <svg class="h-4.5 w-4.5 text-emerald-600" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.141 1.451 4.587 1.451 5.535 0 10.039-4.5 10.043-10.03.002-2.68-1.038-5.198-2.932-7.093s-4.41-2.936-7.093-2.936c-5.544 0-10.049 4.505-10.054 10.038-.001 1.545.465 3.054 1.347 4.399l-.991 3.613 3.733-.979z"/>
+          </svg>
+          <span>مجموعات واتساب</span>
+        </a>
+
+        <!-- Telegram Channel -->
+        <a
+          href="https://t.me/#"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center justify-center gap-2 p-2.5 rounded border border-neutral-200 hover:border-sky-500 bg-sky-50/50 hover:bg-sky-50 transition-all text-xs font-bold text-sky-900"
+        >
+          <!-- Telegram Icon -->
+          <svg class="h-4.5 w-4.5 text-sky-600" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.11.02-1.93 1.23-5.46 3.62-.51.35-.98.53-1.39.51-.46-.01-1.34-.26-1.99-.48-.8-.27-1.43-.41-1.37-.87.03-.24.36-.48.98-.73 3.82-1.66 6.37-2.75 7.63-3.27 3.62-1.5 4.38-1.76 4.87-1.77.11 0 .35.03.5.15.13.1.17.24.18.33-.02.09.01.24 0 .38z"/>
+          </svg>
+          <span>قناة تيليجرام</span>
+        </a>
+
+        <!-- Facebook page link -->
+        <a
+          href="https://www.facebook.com/share/v/18nkZ8LN7B/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center justify-center gap-2 p-2.5 rounded border border-neutral-200 hover:border-blue-500 bg-blue-50/50 hover:bg-blue-100/30 transition-all text-xs font-bold text-blue-900"
+        >
+          <!-- Facebook Icon -->
+          <svg class="h-4.5 w-4.5 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/>
+          </svg>
+          <span>بوابة الفيسبوك</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="mt-8 border-t border-neutral-200 bg-white py-8 text-neutral-500">
+    <div class="mx-auto max-w-3xl px-4 text-center space-y-2">
+      <div class="flex items-center justify-center gap-2 text-neutral-400">
+        <!-- SVG Watch Icons -->
+        <svg class="h-5 w-5 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+        </svg>
+        <span class="font-bold text-neutral-800">قناة مدينة الروضة ميديا © 2026</span>
+      </div>
+      <div class="text-[10px] text-neutral-400">
+        تم تطوير البوابة للتصفح الذكي المتوافق مع جميع الهواتف الذكية وباقات التصفح الخفيفة. جميع الحقوق محفوظة لجمهور وأهالي مدينة الروضة - شبوة.
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT ENGINE -->
+  <script>
+    function playVideo() {
+      const fbUrl = "https://www.facebook.com/share/v/18nkZ8LN7B/";
+      const encodedUrl = encodeURIComponent(fbUrl);
+      const embedUrl = `https://www.facebook.com/plugins/video.php?href=${encodedUrl}&show_text=0&width=560&mute=0&autoplay=1`;
+      
+      const iframeContainer = document.getElementById('video-iframe-container');
+      const placeholder = document.getElementById('video-placeholder');
+      
+      iframeContainer.innerHTML = `
+        <iframe 
+          src="${embedUrl}" 
+          class="w-full h-full border-0" 
+          style="border: none; overflow: hidden;" 
+          scrolling="no" 
+          frameborder="0" 
+          allowfullscreen="true" 
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+        </iframe>
+      `;
+      
+      placeholder.style.display = 'none';
+      iframeContainer.classList.remove('hidden');
+    }
+
+    function copyVideoLink() {
+      const fbUrl = "https://www.facebook.com/share/v/18nkZ8LN7B/";
+      navigator.clipboard.writeText(fbUrl).then(() => {
+        const btnText = document.getElementById('share-btn-text');
+        btnText.innerHTML = `
+          <svg class="h-4 w-4 text-emerald-600 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
+          <span class="text-emerald-700 font-bold">تم نسخ رابط الفيديو بنجاح!</span>
+        `;
+        
+        setTimeout(() => {
+          btnText.innerHTML = `
+            <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.684 10.742l4.028-2.014m0 0a3.5 3.5 0 10-4.028-2.014 3.5 3.5 0 004.028 2.014zm0 0l-4.028 2.014m0 0a3.5 3.5 0 104.028 2.014 3.5 3.5 0 00-4.028-2.014z" />
+            </svg>
+            مشاركة رابط الفيديو
+          `;
+        }, 2500);
+      });
+    }
+  </script>
+</body>
+</html>
